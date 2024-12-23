@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>People's Clock</title>
+    <link rel="stylesheet" href="Clock.css">
+</head>
+<body>
+    <div class="clock-container">
+        <h1>People's Clock</h1>
+        <div id="time" class="time-display">Loading time...</div>
+        <p>Current Time</p>
+
+        <div class="navigation">
+            <a href="/about" target="_blank">About</a>
+            <a href="/home" target="_blank">Home</a>
+            <a href="/contact" target="_blank">Contact</a>
+        </div>
+        <footer>
+            <p>&copy; 2024 All rights reserved</p>
+        </footer>
+    
+    </div>
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            document.getElementById('time').textContent = timeString;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+
+</body>
+</html>

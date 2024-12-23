@@ -1,0 +1,78 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e7f9f, #34495e);
+    color: white;
+}
+
+.clock-container {
+    text-align: center;
+    background-color: #2f3640; 
+    border-radius: 20px;
+    padding: 50px;
+    width: 60%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: url('https://via.placeholder.com/500x300/4b4b4b/ffffff?text=Wooden+Wall+Texture') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border: 10px solid #d35400;
+}
+
+.time-display {
+    font-size: 90px; 
+    font-family: 'Digital-7', sans-serif;
+    color: #f39c12; 
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px rgba(243, 156, 18, 0.8);
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 30px;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #bdc3c7;
+    margin-top: 5px;
+}
+
+a {
+    color: #f39c12;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e74c3c;
+}
+
+footer {
+    text-align: center;
+    color: #bdc3c7;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.clock-container:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
